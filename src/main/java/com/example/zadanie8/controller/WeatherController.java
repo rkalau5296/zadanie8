@@ -5,6 +5,7 @@ import com.example.zadanie8.repository.WeatherRepository;
 import com.example.zadanie8.service.WeatherService;
 import com.example.zadanie8.url.Url;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -25,8 +26,8 @@ public class WeatherController {
     }
 
     @RequestMapping(method = RequestMethod.GET, value = "/getData")
-    public List<Weather> getWeatherData (){
-        return weatherService.getAllByTemperature();
+    public void getWeatherData (){
+        weatherService.getAllByTemperature();
     }
 
 

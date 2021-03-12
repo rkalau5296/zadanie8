@@ -9,7 +9,6 @@ import java.util.List;
 @Repository
 public interface WeatherRepository extends JpaRepository<Weather, Long> {
 
-    @Override
-    Weather save(Weather weather);
+
 
 }
