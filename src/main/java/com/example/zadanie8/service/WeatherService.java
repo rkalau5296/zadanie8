@@ -1,6 +1,5 @@
 package com.example.zadanie8.service;
 
-import com.example.zadanie8.model.Weather;
 import com.example.zadanie8.repository.WeatherRepository;
 import com.example.zadanie8.url.Url;
 import org.slf4j.Logger;
@@ -8,8 +7,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 @Service
 public class WeatherService {
